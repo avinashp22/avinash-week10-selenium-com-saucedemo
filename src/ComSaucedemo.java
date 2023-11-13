@@ -32,13 +32,13 @@ public class ComSaucedemo {
         System.out.println(driver.getCurrentUrl()); // print current url
         System.out.println(driver.getPageSource()); // print page source
 
-        WebElement email = driver.findElement(By.id("Email"));    //find email field and enter email by ID
-        email.sendKeys("avi@patel.com");   // type into box, action
+        WebElement email = driver.findElement(By.id("user-name"));    //find email field and enter email by ID
+        email.sendKeys("standard_user");   // type into box, action
 
-        WebElement password = driver.findElement(By.id("Password"));       //find password field and enter password by ID
-        password.sendKeys("Halllo123");    // type into box, action
+        WebElement password = driver.findElement(By.id("password"));       //find password field and enter password by ID
+        password.sendKeys("secret_sauce");    // type into box, action
 
-        WebElement loginLink = driver.findElement(By.linkText("LOG IN")); // hover to login button
+        WebElement loginLink = driver.findElement(By.id("login-button")); // hover to login button
         loginLink.click(); // click on link
 
         System.out.println(driver.getCurrentUrl()); // print current url
