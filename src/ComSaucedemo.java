@@ -9,7 +9,7 @@ import java.time.Duration;
 
 public class ComSaucedemo {
 
-    static String browser = "chrome"; // choose browser
+    static String browser = "firefox"; // choose browser
     static WebDriver driver; // declare globally
 
     public static void main(String[] args) {
@@ -46,7 +46,7 @@ public class ComSaucedemo {
         driver.navigate().to(baseURL); // tell driver to navigate to base url
         driver.navigate().refresh(); // refresh url
 
-        driver.quit();  // close browser
+       driver.quit();  // close browser
     }
 
 }
